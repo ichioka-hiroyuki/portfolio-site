@@ -205,6 +205,10 @@ a {
   display: block;
 }
 
+.work-card__thumb--top img {
+  object-position: top;
+}
+
 .work-card h3 {
   margin: 0 0 8px;
   font-size: 1.05rem;
