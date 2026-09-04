@@ -207,6 +207,80 @@ a {
   font-size: 0.9rem;
 }
 
+/* Results */
+.results__lead {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: -32px auto 48px;
+}
+
+.results__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.results__stat {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.results__stat--featured {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(43, 108, 176, 0.15);
+}
+
+.results__stat-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.results__stat-value small {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.results__stat-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.results__chart {
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.results__chart img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  display: block;
+}
+
+.results__note {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.results__cta {
+  text-align: center;
+}
+
 /* Works */
 .works {
   display: grid;
@@ -307,6 +381,139 @@ a {
   font-size: 0.85rem;
 }
 
+/* Case study page */
+.case-hero {
+  padding-top: 64px;
+  padding-bottom: 48px;
+  text-align: center;
+  background: var(--color-bg-alt);
+}
+
+.case-hero__eyebrow {
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.case-hero__title {
+  font-size: 2rem;
+  margin: 0 0 16px;
+  letter-spacing: 0.03em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.case-hero__subtitle {
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.case-container {
+  max-width: 760px;
+}
+
+.case-section h2 {
+  font-size: 1.3rem;
+  margin: 56px 0 20px;
+  letter-spacing: 0.02em;
+}
+
+.case-section h2:first-child {
+  margin-top: 0;
+}
+
+.case-section p {
+  color: var(--color-text-muted);
+}
+
+.case-list {
+  color: var(--color-text-muted);
+  padding-left: 1.4em;
+}
+
+.case-list li {
+  margin-bottom: 8px;
+}
+
+.case-list--steps {
+  list-style: none;
+  padding-left: 0;
+}
+
+.case-list--steps li {
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.case-note {
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 0.9rem;
+}
+
+.case-table-scroll {
+  overflow-x: auto;
+}
+
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+}
+
+.case-table th,
+.case-table td {
+  border: 1px solid var(--color-border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.case-table th {
+  background: var(--color-bg-alt);
+}
+
+.case-table__result td {
+  background: #eef5fb;
+  color: var(--color-accent);
+}
+
+.case-table--summary {
+  white-space: nowrap;
+}
+
+.case-chart {
+  margin: 0 0 32px;
+}
+
+.case-chart img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  display: block;
+}
+
+.case-cta {
+  text-align: center;
+  margin: 48px 0 32px;
+}
+
+.case-footnote {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
 /* Footer */
 .footer {
   padding: 32px 0;
@@ -326,13 +533,21 @@ a {
     font-size: 2.1rem;
   }
 
+  .header__inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px 0;
+    row-gap: 8px;
+  }
+
   .logo {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .nav {
-    gap: 10px;
-    font-size: 0.78rem;
+    width: 100%;
+    gap: 14px;
+    font-size: 0.8rem;
   }
 
   .about {
@@ -352,6 +567,14 @@ a {
 
   .skills {
     grid-template-columns: 1fr;
+  }
+
+  .results__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .case-hero__title {
+    font-size: 1.5rem;
   }
 
   .work-card__thumb {

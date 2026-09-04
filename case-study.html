@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>その事務作業、AIでここまで減らせます | 元県職員×簿記・FP</title>
+<meta name="description" content="属人化した引き継ぎ業務・請求書の突合/支払管理・会議の議事録、3つの業務でAI活用の実証実験を行った結果をまとめました。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">元県職員×簿記・FP</a>
+    <nav class="nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#results">実績</a>
+      <a href="index.html#works">Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section case-hero">
+    <div class="container">
+      <p class="case-hero__eyebrow">実証実験レポート</p>
+      <h1 class="case-hero__title">その事務作業、AIでここまで減らせます</h1>
+      <p class="case-hero__subtitle">
+        属人化した引き継ぎ業務／請求書の突合・支払管理／会議の議事録、3つの業務で実際に検証しました
+      </p>
+    </div>
+  </section>
+
+  <section class="section case-section">
+    <div class="container case-container">
+
+      <h2>はじめに</h2>
+      <ul class="case-list">
+        <li><strong>実施主体</strong>:元・地方公務員としてバックオフィス実務(経理・総務・補助金審査等)に24年携わってきた立場で、AI活用の実証実験を行っている</li>
+        <li><strong>使用したAIツール</strong>:Claude(Anthropic社のAIアシスタント、Claude Code)</li>
+        <li><strong>検証方法について</strong>:検証はいずれも守秘義務に配慮し、実企業のデータではなく一般化・架空化した疑似案件で行っている</li>
+      </ul>
+
+      <p>こんな業務、あなたの会社にもありませんか?</p>
+      <ul class="case-list">
+        <li>引き継ぎが担当者の頭の中にしかない</li>
+        <li>請求書チェックを毎月手作業で行っている</li>
+        <li>会議後の議事録作成に時間がかかる</li>
+      </ul>
+
+      <p>
+        経理・総務まわりの仕事は、一人の担当者が長年の経験と勘で回していることが少なくありません。担当者が急に休んだときの引き継ぎ、請求書の処理や支払い管理、会議の議事録――どれも「今のところ回っている」からこそ、見直す機会がないまま属人化しがちな業務です。
+      </p>
+      <p>
+        そうした業務を、実際にAIを使うとどれだけ変わるのか。3つのテーマで検証してみました。<strong>「AIなら最大91%削減できます」という話ではなく、「手直しのやり取りまで含めても76%短縮できた業務がある」という、実務に近い条件での結果を中心にお伝えします。</strong>
+      </p>
+
+      <h2>検証①:属人化した引き継ぎ業務</h2>
+      <p><strong>設定</strong>:経理担当者が長期療養で休職する物流会社(架空・従業員8名)を想定し、聞き取りメモ(約1,800字)から後任者向けの引き継ぎマニュアルを作成。</p>
+
+      <table class="case-table">
+        <tr><th></th><th>所要時間</th></tr>
+        <tr><td>Before(手作業でマニュアル作成)</td><td>34分</td></tr>
+        <tr><td>After(AI活用、生成〜確認〜承認まで)</td><td>7分</td></tr>
+        <tr class="case-table__result"><td><strong>改善率</strong></td><td><strong>約79%短縮(約4.9倍速)</strong></td></tr>
+      </table>
+
+      <p>AIは聞き取りメモの内容を漏れなく構造化しただけでなく、「業務カレンダー」という独自の整理も加え、後任者が年間の流れをひと目で把握できる形に仕上げました。</p>
+
+      <h2>検証②:請求書の突合・支払管理</h2>
+      <p><strong>設定</strong>:製造業(架空)を想定し、発注記録8件・届いた請求書10通(うち4件に意図的な不整合を混入)をもとに、支払予定表を作成。</p>
+
+      <table class="case-table">
+        <tr><th></th><th>所要時間</th></tr>
+        <tr><td>Before(手作業で突合・支払予定表作成)</td><td>22分</td></tr>
+        <tr><td>After(AI活用、生成〜確認〜承認まで)</td><td>2分</td></tr>
+        <tr class="case-table__result"><td><strong>改善率</strong></td><td><strong>約91%短縮(約11倍速)</strong></td></tr>
+      </table>
+
+      <p>
+        この検証で大事なのは時間よりも精度です。仕込んでおいた4つの不整合(金額不一致・重複請求・支払期日相違・発注記録のない請求書)は、AI・手作業のどちらも完全に検出しました。つまりAIは「見落としなく検出できる仕組み」として機能しています。買掛金・支払管理では、支払い遅延や二重払い、振込先の誤りが信用問題に直結します。<strong>AI活用の価値は「速さ」以上に「見落としを構造的に防げること」</strong>にあります。
+      </p>
+      <p class="case-note">
+        <strong>自社に置き換えると</strong>:請求書処理のように毎月発生する業務であれば、この差は積み重なります。20分の短縮でも、月1回続けば年間で約4時間の差になる計算です(※実際の削減効果を保証するものではなく、単純換算の一例です)。
+      </p>
+
+      <h2>検証③:会議の議事録作成</h2>
+      <p>
+        <strong>設定</strong>:建設資材卸売業(架空)の月次定例会議(出席者5名)を想定し、会議の発言録(約1,700字)から議事録を作成。単なる文字起こしではなく、「前回決定事項の進捗」「本日の決定事項(担当者・期限)」「次回への申し送り」の3点を毎回引き継げる、<strong>議事録が"資産"として積み上がる形</strong>を目指した。
+      </p>
+
+      <table class="case-table">
+        <tr><th></th><th>所要時間</th></tr>
+        <tr><td>Before(手作業で議事録作成)</td><td>38分</td></tr>
+        <tr><td>After(AI活用、生成〜確認〜修正〜承認まで)</td><td>9分</td></tr>
+        <tr class="case-table__result"><td><strong>改善率</strong></td><td><strong>約76%短縮(約4.2倍速)</strong></td></tr>
+      </table>
+
+      <p>
+        この検証では、AIが作った初稿に対して実際に2回の修正指示(議事概要が抜けていたための追加、読みやすさのための箇条書き化)を出し、やり取りを経て完成させています。<strong>検証①②は1回で承認に至ったケースでしたが、検証③は「実際に手直しをしながら完成させる」という、より実務に近いプロセスを含んだ計測です。</strong>
+      </p>
+      <p class="case-note">
+        <strong>自社に置き換えると</strong>:月1回の定例会議であれば、この差(29分)は年間で約6時間相当になる計算です(※単純換算の一例です)。
+      </p>
+
+      <h2>3件の検証結果まとめ</h2>
+
+      <div class="case-table-scroll">
+        <table class="case-table case-table--summary">
+          <tr>
+            <th>検証テーマ</th>
+            <th>Before</th>
+            <th>After</th>
+            <th>改善率</th>
+            <th>検証条件</th>
+          </tr>
+          <tr>
+            <td>①引き継ぎマニュアル作成</td>
+            <td>34分</td>
+            <td>7分</td>
+            <td>79%短縮</td>
+            <td>修正なし・一発承認</td>
+          </tr>
+          <tr>
+            <td>②請求書の突合・支払管理</td>
+            <td>22分</td>
+            <td>2分</td>
+            <td>91%短縮</td>
+            <td>修正なし・一発承認</td>
+          </tr>
+          <tr class="case-table__result">
+            <td><strong>③会議の議事録作成</strong></td>
+            <td><strong>38分</strong></td>
+            <td><strong>9分</strong></td>
+            <td><strong>76%短縮</strong></td>
+            <td><strong>修正2回込み(もっとも実務に近い条件)</strong></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="case-chart">
+        <img src="assets/results/chart_3cases.png" alt="3つの検証のBefore/After所要時間比較グラフ" loading="lazy">
+      </div>
+
+      <p>
+        ①②は「AIの初稿がそのまま採用された」場合の数字で、実際の業務では手直しが発生することも珍しくありません。③はその手直しまで含めた数字であり、<strong>3件の中でもっとも保守的・現実的な数値</strong>です。実際の効果を見積もる際は、<strong>③の約76%短縮を「実務に近い代表値」</strong>、①②の79%・91%は好条件下での参考実績として捉えていただくのが誠実だと考えています。
+      </p>
+
+      <h2>誠実にお伝えしたいこと</h2>
+      <ul class="case-list">
+        <li>検証①(マニュアル化)のBefore(手作業)は、聞き取りメモの記載順を踏襲して簡潔にまとめた水準での計測です。より丁寧に作り込んだ場合、所要時間はさらに長くなった可能性があります</li>
+        <li>検証②(請求書処理)・検証③(議事録)のBefore(手作業)は、いずれも実務に近い丁寧さで作成されており、手を抜いた実施ではありません</li>
+        <li>検証①②はAIの初稿がそのまま承認された1回のみの計測、検証③は2回の修正を経た計測です。条件が異なるため、単純に数字だけを比較しないようご注意ください</li>
+        <li>いずれも1件ずつの検証であり、再現性(複数回・条件を変えた試行)はまだ十分に検証できていません</li>
+        <li>業務内容や条件により結果は異なります。あくまで初回検証での結果、という位置づけでご覧ください</li>
+      </ul>
+
+      <h2>まとめ</h2>
+      <p>
+        3つの検証を通じて見えてきたのは、「担当者の頭の中にしかないやり方」を一度言語化・仕組み化するだけで、時間も、見落としのリスクも、大きく減らせるという可能性です。派手なシステム導入ではなく、<strong>今の業務のやり方を一緒に整理するところから</strong>、AI活用は始められます。
+      </p>
+      <ul class="case-list case-list--steps">
+        <li><strong>①業務の棚卸し</strong>:現在の業務を一緒に棚卸しし、どこが属人化しているかを整理する</li>
+        <li><strong>②整理・言語化</strong>:棚卸しの結果から、マニュアル化・仕組み化すべき業務を洗い出す</li>
+        <li><strong>③AI活用の選定</strong>:AIで効率化できる業務・できない業務を切り分け、優先順位をつけて提案する</li>
+      </ul>
+
+      <p>
+        「うちの場合はどうなるだろう」と思われた方は、まずは①の業務の棚卸しからお気軽にご相談ください。ご相談いただいた場合の最初の一歩は以下の通りです。
+      </p>
+      <ul class="case-list">
+        <li>まずは30分程度、現在の業務についてお聞かせください</li>
+        <li>お伺いした内容をもとに、「AI化できそうな業務」と「AI化しない方がよい業務」を整理してお伝えします</li>
+      </ul>
+
+      <div class="case-cta">
+        <a href="index.html#contact" class="button">お問い合わせはこちら →</a>
+      </div>
+
+      <p class="case-footnote">
+        AI業務改善ラボ 第1回実証実験(2026年8月17日)・第2回実証実験(2026年8月29日)・第3回実証実験(2026年9月4日)
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 元県職員×簿記・FP</p>
+  </div>
+</footer>
+
+</body>
+</html>
